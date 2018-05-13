@@ -8,23 +8,24 @@ from Locations.place import *
 
 
 def help(arg):
-	print "Here are some commands to type:\n" + red + "go " + end + "(compass direction)\n" + red + "use " + end + "(item name)\n" + end + red + "stats" + end + red + "\ni" + end + " (inventory)" + red + "\nsw weapons " + end + "(switch weapons)" + red + "\nmarket " + end + red + "\nmap" + end
+    print ("Here are some commands to type:\n" + red + "go " + end + "(compass direction)\n" + red + "use " + end + "(item name)\n" + end + red + "stats" + end + red + "\ni" + end + " (inventory)" + red + "\nsw weapons " + end + "(switch weapons)" + red + "\nmarket " + end + red + "\nmap" + end)
 
-def function():
-	pass
 
 def exit(arg):
-	ask = raw_input("Are you sure you want to exit? ")
+	ask = input("Are you sure you want to exit? ")
 	if (ask == 'yes'):
 		sys.exit()
 	elif (ask == 'no'):
 		pass
 
+
 def check_inventory(args):
 	utilities.check_inventory()
 
+
 def switch_weapons(weapon):
-	pass
+	pass #.change_weapon(weapon)
+
 
 def use_item(item):
 	if item not in utilities.Backpack.inside:
@@ -51,18 +52,18 @@ def go(direction):
 	global current_location
 	if direction == 'North':
 		current_location = current_location.north
-		print str(current_location.description)
+		print (str(current_location.description))
 		
 	elif direction == 'East':
 		current_location = current_location.east
-		print str(current_location.description)
+		print (str(current_location.description))
 
 	elif direction == 'West':
 		current_location = current_location.west
-		print str(current_location.description)
+		print (str(current_location.description))
 
 	elif direction == 'South':
 		current_location = current_location.south
-		print str(current_location.description)
+		print (str(current_location.description))
 	else:
-		print 'you did not specify what direction you wanted to go.'
+		print ('you did not specify what direction you wanted to go.')

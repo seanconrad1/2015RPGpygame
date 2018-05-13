@@ -1,5 +1,4 @@
-from character import *
-
+from .character import *
 
 class NPC(Entity):
 	"""Player's character"""

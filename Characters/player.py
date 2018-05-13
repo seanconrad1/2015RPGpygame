@@ -1,4 +1,4 @@
-from character import *
+from .character import *
 
 class txt_colors:
     PURPLE = '\033[95m'
@@ -34,25 +34,25 @@ class Hero(Entity):
 	
 	def replenish_health(self, amount):
 		self.health += amount
-		print "Replenished " + str(amount) + " health."
+		print ("Replenished " + str(amount) + " health.")
 		if self.health > 100:
 			self.health = 100
-		print "Current health: " + str(self.health)
+		print ("Current health: " + str(self.health))
 		return True
 
 	def subtract_health(self, amount):
 		self.health -= amount
 		if self.health <= 0:
-			print "GAME OVER"
+			print ("GAME OVER")
 			sys.exit()
 		return True
 
 	def replenish_mana(self, amount):
 		self.mana += amount
-		print "Replenished " + str(amount) + " mana."
+		print ("Replenished " + str(amount) + " mana.")
 		if self.mana > 20:
 			self.mana = 20
-		print "Current mana: " + str(self.mana)
+		print ("Current mana: " + str(self.mana))
 		return True
 
 	def subtract_mana(self, amount):

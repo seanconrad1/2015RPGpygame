@@ -1,4 +1,5 @@
-from item import *
+from .item import *
+
 import random
 
 class Weapons(Items):
