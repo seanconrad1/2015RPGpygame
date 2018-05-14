@@ -21,7 +21,7 @@ NewHero = Hero("blank")
 Dawn = Swords("Dawn", 3, 10, 200, two_handed=False, throwable=False)
 Sting = Swords("Sting", 2, 7, 50, two_handed=False, throwable=True)
 Small_Knife = Swords("Small Knife", 1, 1, 1, two_handed=False, throwable=True)
-#Andurial = Swords()
+Needle = Swords("Needle", 1, 1.5, 10, two_handed=False, throwable=False)
 
 # Arguments for Axes (name, ar, val, two_handed=False, double_sided=False, throwable=False)
 War_Ravager = Axes("War Ravager", 15, 500, two_handed=True, double_sided=True, throwable=True)
@@ -79,4 +79,7 @@ The_Sorcerers_Stone = Books("The Sorcerers Stone", 50, 5, "J.K. Rowling", """   
      people you'd expect to be in anything involved
      in anything strange or mysterious, because they
      just don't hold such nonsense...""")
+
+
+A_Song_Of_Fire_and_Ice = Books("A Song Of Fire and Ice", 50, 5, "J.R.R Martin", "Winter is Coming...")
 

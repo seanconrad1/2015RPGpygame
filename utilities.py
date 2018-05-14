@@ -10,10 +10,10 @@ all_items_in_game = [Dawn, Sting, Small_Knife, War_Ravager, Brutal_War_Axe, One_
 		 		Infamy, Exiled_Spirit_Staff, Cold_Forged_Spear, Heartseeker, Reckoning,
 		 		Minor_Health_Potion, Health_Potion, Minor_Mana_Potion, Mana_Potion,
 		 		Major_Health_Potion, Major_Mana_Potion, Rejuvenation_Potion, The_Sorcerers_Stone,
-					 The_Silmarillion, A_Song_Of_Fire_and_Ice, Worldslayer]
+					 The_Silmarillion, A_Song_Of_Fire_and_Ice, Worldslayer, Needle]
 
 weapons_in_game = [Dawn, Sting, Small_Knife, War_Ravager, Brutal_War_Axe, One_Handed_Axe,
-		 		Infamy, Exiled_Spirit_Staff, Cold_Forged_Spear, Heartseeker, Reckoning, Worldslayer]
+		 		Infamy, Exiled_Spirit_Staff, Cold_Forged_Spear, Heartseeker, Reckoning, Worldslayer, Needle]
 
 books_in_game = [The_Silmarillion, The_Sorcerers_Stone, A_Song_Of_Fire_and_Ice]
 

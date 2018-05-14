@@ -25,9 +25,11 @@ from Locations.place import *
 # Booleans
 gameOn = True
 
+
 # Prints Hero class __str__
 def print_hero_stats(args):
 	print (NewHero)
+
 
 def jump(args):
 	print ("You jump as high as you can.")
@@ -48,6 +50,7 @@ commands = {
    	'Market': market,
    	'Use': use_item,
 }
+
 
 # Validates input and then sends to runCMD
 def isValidCMD(cmd):

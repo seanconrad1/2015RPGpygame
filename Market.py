@@ -5,6 +5,7 @@ import time
 
 MarketInventory = Container('Market Inventory')
 
+
 MarketInventory.add(Dawn.name, 1)
 MarketInventory.add(Minor_Health_Potion.name, 5)
 MarketInventory.add(Health_Potion.name, 3)
@@ -16,27 +17,31 @@ MarketInventory.add(The_Silmarillion.name, 1)
 MarketInventory.add(The_Sorcerers_Stone.name, 1)
 MarketInventory.add(Worldslayer.name, 1)
 MarketInventory.add(A_Song_Of_Fire_and_Ice.name, 1)
+MarketInventory.add(Needle, 1)
 
 Market = True
 
-#I want the market menu to display Name, Price and Quantity.
-#Try to make the command be: 'buy 1 (item name)'
-#Then the response be: Buy (quantity) + (item)'s for (gold)?
-#Also add an INFO command
+# Try to make the command be: 'buy 1 (item name)'
+# Then the response be: Buy (quantity) + (item)'s for (gold)?
+# Also add an INFO command
+
 
 def return_Market_inventory():
     ordered_inventory = collections.OrderedDict((MarketInventory.inside))
-    print ("\n----" + red + MarketInventory.name + end + "----")
+    print("\n----" + red + MarketInventory.name + end + "----")
     for k, v in ordered_inventory.items():
-        print (str(k) + " qty(" + str(v) + ") " + red + str(find_item_value(k)) + end + "g")
-    print ("------------------------\n")
+        print(str(k) + " qty(" + str(v) + ") " + red + str(find_item_value(k)) + end + "g")
+    print("------------------------\n")
 
 def return_Backpack_inventory():
     ordered_inventory = collections.OrderedDict((Backpack.inside))
-    print ("\n----" + red + Backpack.name + end + "----")
+    print("\n----" + red + Backpack.name + end + "----")
     for k, v in ordered_inventory.items():
-        print (str(k) + " qty(" + str(v) + ") " + red + str(find_item_value(k)) + end + "g")
-    print ("----------------\n")
+        print(str(k) + " qty(" + str(v) + ") " + red + str(find_item_value(k)) + end + "g")
+    print("----------------\n")
+
+
+
 
 
 def buy(arg):

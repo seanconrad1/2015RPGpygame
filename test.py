@@ -1,20 +1,20 @@
-from Items.books import *
-from Items.weapon import *
-from utilities import *
-
-Dawn = Swords("Dawn", 3, 10, 15, two_handed=False, throwable=False)
-
-The_Sorcerers_Stone = Books("The Sorcerers Stone", 50, 50, "J.K. Rowling", "TEST")
 
 
+import math
+
+users_xp = 0
+new_xp = 10
 
 
-def find_all_item_names(item):
-   	for i in all_items_in_game:
-   		if i.name == item:
-   			return i.name
+def level_up(level):
+	global exp
+	exp = level * math.log10(level)
+	exp = exp * 100
+	return exp
+
+def add_xp(exp):
+	pass
 
 
-print (find_item_value(Dawn.name))
 
-print (find_all_item_names(A_Song_Of_Fire_and_Ice.name))
+print(level_up(2))
